@@ -1,13 +1,15 @@
 #alumno: Benjamin Cajales
-#TP3
+#TP4
 
-#ejercicio 1
+#1- Escribir un programa que solicite la edad del usuario. Si el usuario es mayor de 18 años,
+#debera mostrar un mensaje en pantall que diga "Es mayor de edad".
 
 i = 0
 for i in range(100):
     print(i)
 
-#ejercicio 2
+#2- Escribir un programa que solicite su nota al usuario. Si la nota es mayor o igual a 6,
+#debera mostrar por pantalla un mensaje que diga "Aprobado"; en caso contrario debera mostrar el mensaje "Desaprobado"
 
 numero = int(input("ingrese un numero entero: "))
 contador = 0
@@ -19,7 +21,9 @@ while b > 0:
     b = b // 10
 print("Digitos que contiene este numero es: ",contador)
 
-#ejercicio 3
+#3- Escribir un programa que permita ingresar solo numeros pares. Si el usuario ingresa un numero par,
+#imprimir en pantalla el mensaje "Ha ingresado un numero par", en caso contrario, imprimir por pantalla 
+# "Por favor, ingrese un numero par"
 
 extremo_bajo = int(input("ingrese el extremo mas bajo: "))
 extremo_alto = int(input("ingrese el extremo mas alto: "))
@@ -30,7 +34,9 @@ for i in range(extremo_bajo + 1,extremo_alto):
 print("")
 print(suma_total)
 
-#ejercicio 4
+#4- Escribir un programa que solicite al usuario su edad e imprima por pantalla a cual de las siguientes 
+#categorias pertenece:
+#niño/a:  < 12 años, adolescente: >= 12 años and < 18 años, adulto/a joven: >= 18 años and < 30 años, adulto/a: >= 30 años
 
 valor_verdad = True
 sumatoria = 0
@@ -42,7 +48,7 @@ while valor_verdad == True:
         valor_verdad = False
 print("Total sumados es: ",sumatoria)
 
-#ejercicio 5
+#5- Escribir un programa que permita introducir contraseñas de entre 8 y 14 caracteres (incluyendo 8 y 14)
 
 import random
 numero_random = random.randint(0,9)

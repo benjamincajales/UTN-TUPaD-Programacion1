@@ -1,13 +1,15 @@
 #alumno: Benjamin Cajales
-#TP 3
+#TP 2
 
-#ejercicio 1
+#1- Escribir un programa que solicite la edad del usuario. Si el usuario es mayor de 18 años,
+#debera mostrar un mensaje en pantall que diga "Es mayor de edad".
 
 edad = int(input("ingrese la edad: "))
 if (edad > 18):
     print("Es mayor de edad.")
 
-#ejercicio 2
+#2- Escribir un programa que solicite su nota al usuario. Si la nota es mayor o igual a 6,
+#debera mostrar por pantalla un mensaje que diga "Aprobado"; en caso contrario debera mostrar el mensaje "Desaprobado"
 
 nota = int(input("ingrese su nota: "))
 if (nota >= 6):
@@ -15,7 +17,9 @@ if (nota >= 6):
 else:
     print("Desaprobado.")
 
-#ejercicio 3
+#3- Escribir un programa que permita ingresar solo numeros pares. Si el usuario ingresa un numero par,
+#imprimir en pantalla el mensaje "Ha ingresado un numero par", en caso contrario, imprimir por pantalla 
+# "Por favor, ingrese un numero par"
 
 numero = int(input("ingrese un numero par: "))
 if numero % 2 != True:
@@ -23,7 +27,9 @@ if numero % 2 != True:
 else:
     print("El numero no es par.")
 
-#ejercicio 4
+#4- Escribir un programa que solicite al usuario su edad e imprima por pantalla a cual de las siguientes 
+#categorias pertenece:
+#niño/a:  < 12 años, adolescente: >= 12 años and < 18 años, adulto/a joven: >= 18 años and < 30 años, adulto/a: >= 30 años
 
 edad = int(input("ingrese su edad: "))
 if (edad < 12):
@@ -35,7 +41,9 @@ elif (edad >= 18 and edad < 30):
 else:
     print("Usted es un Adulto/a.")
 
-#ejercicio 5
+#5- Escribir un programa que permita introducir contraseñas de entre 8 y 14 caracteres (incluyendo 8 y 14).
+#Si el usuarui ingresa una contraseña de longitud adecuada, imprimir por en pantalla el mensaje "Ha ingresado una contraseña correcta"
+#, en caso contrario, imprimir por pantalla "Por favor, ingrese una contraseña de entre 8 y 14 caracteres".
 
 contraseña = input("ingrese una contraseña: ")
 print(len(contraseña))
@@ -44,7 +52,11 @@ if (len(contraseña) >= 8 and len(contraseña)<=14 != True):
 else:
     print("Por favor, ingrese una contraseña de entre 8 y 14 caracteres.")
 
-#ejercicio 6
+#6- importa la libreria statistics y calcula la moda, mediana y la media de dichos numeros.
+# Generados en una lista de 100 elementos de manera random, importar la libreria random.
+# -sesgo positivo o a la derecha: media > mediana and mediana > moda
+# -sesgo negativo o a la izquierda: media < mediana and mediana < moda
+# -sin sesgo: media == mediana and mediana == moda
 
 from statistics import mode, median, mean
 import random
@@ -59,7 +71,9 @@ elif(media < mediana and mediana < moda):
 else:
     print("Sin sesgo")
 
-#ejercicio 7
+#7- Escribir un programa que solicite una frase o palabra al usuario. Si el string ingresado termina con vocal,
+# añadir un signo de exclamacion al final e imprimir el string resultante por pantalla; en caso contrario,
+# dejar el string tal cual lo ingreso el usuario e imprimirlo por pantalla.
 
 frase = input("ingrese una frase: ")
 long = len(frase)
@@ -76,7 +90,10 @@ elif (frase[long-1] == "u"):
 else:
     print(frase)
 
-#ejercicio 8
+#8- Solicite al usuario que ingrese su nombre y el numero 1,2 o 3 dependiendo de la opcion:
+# -1 Si quiere su nombre en mayusculas.
+# -2 Si quiere su nombre en minusculas.
+# -3 Si quiere su nombre con la primera letra mayuscula.
 
 nombre = input("ingrese su nombre: ")
 digito = int(input("ingrese un numero (1,2,3): "))
@@ -89,7 +106,13 @@ elif (digito == 3):
 else:
     print("ha ingresado un numero incorrecto.")
 
-#ejercicio 9
+#9- Escribir un programa que pida al usuario la magnitud de un terremoto. Clasifique la magnitud en una de las siguientes categorias:
+# < 3: "Muy leve"
+# >= 3 and < 4: "Leve"
+# >= 4 and < 5: "Moderado"
+# >= 5 and < 6: "Fuerte"
+# >= 6 y < 7: "Muy fuerte"
+# >= 7: "Extremo"
 
 magnitud = int(input("ingrese la magnitud del terremoto: "))
 if (magnitud < 3 and magnitud > 0):
@@ -105,7 +128,14 @@ elif (magnitud >= 7):
 else:
     print("La magnitud ingresada no es valida.")
 
-#ejercicio 10
+#10- Utilizando la informacion aportada sobre las estaciones del año.
+# Periodo del año   |   Estacion (hemisferio Norte)     |    Estacion (hemisferio Sur).
+# 21/12 hasta 20/3  |           Invierno                |    Verano
+# 21/3 hasta 20/6   |           Primavera               |    Otoño
+# 21/6 hasta 20/9   |           Verano                  |    Invierno
+# 21/9 hasta 20/12  |           Otoño                   |    Primavera
+# Escribir un programa que pregunte al usuario en cual hemisferio se encuentra, mes y dia;
+# mostrar por salida en que estacion del año se encuentra.
 
 hemisferio = input("ingrese el hemisferio (norte/sur): ")
 hemisferio = hemisferio.upper()
