@@ -1,15 +1,14 @@
 #alumno: Benjamin Cajales
-#TP4
+#TP3
 
-#1- Escribir un programa que solicite la edad del usuario. Si el usuario es mayor de 18 años,
-#debera mostrar un mensaje en pantall que diga "Es mayor de edad".
+#1- Crea un programa que imprima en pantalla todos los numeros enteros desde 0 hasta 100 (incluidos),
+# en orden creciente, mostrando un numero por linea.
 
 i = 0
 for i in range(100):
     print(i)
 
-#2- Escribir un programa que solicite su nota al usuario. Si la nota es mayor o igual a 6,
-#debera mostrar por pantalla un mensaje que diga "Aprobado"; en caso contrario debera mostrar el mensaje "Desaprobado"
+#2- Desarrolla un programa que solicite al usuario un numero entero y determine la cantidad de digitos que contiene 
 
 numero = int(input("ingrese un numero entero: "))
 contador = 0
@@ -21,9 +20,7 @@ while b > 0:
     b = b // 10
 print("Digitos que contiene este numero es: ",contador)
 
-#3- Escribir un programa que permita ingresar solo numeros pares. Si el usuario ingresa un numero par,
-#imprimir en pantalla el mensaje "Ha ingresado un numero par", en caso contrario, imprimir por pantalla 
-# "Por favor, ingrese un numero par"
+#3- Escribe un programa que sume todos los numeros enteros comprendidos entre 2 valores dados por el usuario (excluidos extremos).
 
 extremo_bajo = int(input("ingrese el extremo mas bajo: "))
 extremo_alto = int(input("ingrese el extremo mas alto: "))
@@ -34,9 +31,8 @@ for i in range(extremo_bajo + 1,extremo_alto):
 print("")
 print(suma_total)
 
-#4- Escribir un programa que solicite al usuario su edad e imprima por pantalla a cual de las siguientes 
-#categorias pertenece:
-#niño/a:  < 12 años, adolescente: >= 12 años and < 18 años, adulto/a joven: >= 18 años and < 30 años, adulto/a: >= 30 años
+#4- Escribe un programa que permita al usuario ingresar numeros enteros y los sume en secuencia.
+# El programa debe detenerse y mostrar el total acumulado.
 
 valor_verdad = True
 sumatoria = 0
@@ -48,7 +44,8 @@ while valor_verdad == True:
         valor_verdad = False
 print("Total sumados es: ",sumatoria)
 
-#5- Escribir un programa que permita introducir contraseñas de entre 8 y 14 caracteres (incluyendo 8 y 14)
+#5- Crea un juego en el que el usuario deba adivinar un numero aleatorio (0-9).
+# Al final, el programa debe mostrar cuantos intentos fueron necesarios para acertar el numero. 
 
 import random
 numero_random = random.randint(0,9)
@@ -61,13 +58,13 @@ while numero != numero_random:
     contador = contador + 1
 print("Intentos de adivinar el numero es: ",contador)
 
-#ejercicio 6
+#6- Desarrolla un programa que imprima en pantalla todos los numeros pares comprendidos entre (0-100), en orden decreciente.
 
 for i in range(100,0,-1):
     if i % 2 == 0:
         print(i)
 
-#ejercicio 7
+#7- Crea un programa que calcule la suma de todos los numeros comprendidos entre 0 y un numero entero positivo indicado por el usuario
 
 numero_limite = int(input("ingrese un numero entero positivo: "))
 if numero_limite < 0 or numero_limite % 2 != 0:
@@ -80,7 +77,11 @@ for i in range(numero_limite + 1):
 print("")
 print(suma)
 
-#ejercicio 8
+#8- Escribir un programa que permita al usuario ingresar 100 numeros enteros. Indicar: 
+# -numeros pares 
+# -numeros impares 
+# -numeros negativos 
+# -numeros positivos
 
 pares = 0
 impares = 0
@@ -101,7 +102,7 @@ for i in range(1,101):
 print("Hay: ")
 print(f"pares: {pares}, impares: {impares}, positivos: {positivos} y negativos: {negativos}") 
 
-#ejercicio 9
+#9- Elabora un programa que permita al usuario ingresar 100 numeros enteros y luego calcule la media de esos valores.
 
 media: int = 0
 promedio: float = 0
@@ -111,7 +112,7 @@ for i in range(1, 101):
 promedio = media / i
 print(f"El promedio de los {i} numeros es: {promedio}")
 
-#ejercicio 10
+#10- Escriba un programa que invierta el orden de los digitos de un numero ingresado por el usuario.
 
 numero = int(input("ingrese un numero: "))
 invertido = 0
