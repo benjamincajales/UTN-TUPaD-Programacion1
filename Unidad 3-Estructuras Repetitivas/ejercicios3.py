@@ -1,5 +1,5 @@
 #alumno: Benjamin Cajales
-#TP3
+#TP 3
 
 #1- Crea un programa que imprima en pantalla todos los numeros enteros desde 0 hasta 100 (incluidos),
 # en orden creciente, mostrando un numero por linea.
