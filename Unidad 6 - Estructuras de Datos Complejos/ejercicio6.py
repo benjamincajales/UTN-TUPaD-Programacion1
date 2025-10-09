@@ -434,3 +434,17 @@ for clave, valor in agenda.items():
     print(f"{clave}, actividad: {valor}")
 
 #ejercicio 10
+'''
+Dado un diccionario que mapea nombres de países con sus capitales, construí un nuevo
+diccionario donde:
+° las capitales sean las claves
+° Los países sean los valores
+'''
+
+original = {"Argentina": "Buenos Aires","Chile": "Santiago"}
+invertido = {}
+for clave, valor in original.items():
+    invertido[valor] = clave
+
+print("original: ",original)
+print("invertido: ",invertido)
